@@ -29,3 +29,8 @@ indirectPrimes = filter isPrime (tail nats)
 
 sieve (x:xs) = x : sieve [ y | y <- xs, y `mod` x /= 0]
 primes = sieve [2 .. ]
+
+
+aFewNats = take 15 nats
+aFewFibs = take 10 fibs
+aLotOfPrimes = take 30 primes
